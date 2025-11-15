@@ -109,7 +109,7 @@ NEXT_PUBLIC_ENABLE_ANALYTICS=false
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone <[repository-url](https://github.com/realtemmy/hm-client.git)>
 cd hm-client
 
 # Install dependencies
@@ -289,7 +289,7 @@ bun run format:check # Check code formatting
 
 For issues or questions:
 - Open an issue on GitHub
-- Contact: [your-email]
+- Contact: [temiloluwaOgunti8@gmail.com]
 
 ---
 
