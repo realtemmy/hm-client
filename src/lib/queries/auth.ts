@@ -11,7 +11,8 @@ export function useMe() {
     queryKey: ["user", "me"],
     queryFn: async () => {
       const response = await authApi.me();
-      return response.data.user;
+      console.log("User hook: ", response.data);
+      return response.data ?? null;
     },
     retry: false,
     staleTime: Infinity, // User data doesn't change often
@@ -29,7 +30,6 @@ export function useLogin() {
     mutationFn: (credentials: LoginCredentials) => authApi.login(credentials),
     onSuccess: (data) => {
       const { user } = data.data;
-
       // Update user cache
       queryClient.setQueryData(["user", "me"], user);
 

@@ -1,5 +1,6 @@
 // API Response wrapper types
 export interface ApiResponse<T = unknown> {
+  user: null;
   success: boolean;
   data: T;
   message?: string;

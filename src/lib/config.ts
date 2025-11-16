@@ -1,10 +1,10 @@
 export const config = {
   api: {
-    baseUrl: process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001/api/v1",
+    baseUrl: process.env.NEXT_PUBLIC_API_URL || "http://localhost:3300/api",
   },
   auth: {
     cookieName:
-      process.env.NEXT_PUBLIC_AUTH_COOKIE_NAME || "hms_auth_token",
+      process.env.NEXT_PUBLIC_AUTH_COOKIE_NAME || "auth-token",
   },
   app: {
     name: process.env.NEXT_PUBLIC_APP_NAME || "Housing Management System",

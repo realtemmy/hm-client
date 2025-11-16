@@ -81,10 +81,10 @@ Create a `.env.local` file in the root directory:
 
 ```env
 # API Configuration
-NEXT_PUBLIC_API_URL=http://localhost:3001/api/v1
+NEXT_PUBLIC_API_URL=http://localhost:3300/api/v1
 
 # Authentication
-NEXT_PUBLIC_AUTH_COOKIE_NAME=hms_auth_token
+NEXT_PUBLIC_AUTH_COOKIE_NAME=auth-token
 
 # App Configuration
 NEXT_PUBLIC_APP_NAME=Housing Management System

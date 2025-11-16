@@ -20,7 +20,7 @@ export interface Tenant {
   movedInAt?: string;
   movedOutAt?: string;
   emergencyContact?: string;
-  metadata?: Record<string, any>;
+  metadata?: Record<string, unknown>;
 }
 
 export interface LoginCredentials {
@@ -33,10 +33,11 @@ export interface RegisterData {
   password: string;
   name: string;
   phone?: string;
+  role: "ADMIN" | "USER";
 }
 
 export interface AuthResponse {
   user: User;
-  token: string;
+  accessToken: string;
   refreshToken?: string;
 }
